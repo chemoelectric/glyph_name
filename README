@@ -20,8 +20,8 @@ To install the Python extension:
   python setup.py install [--prefix=/where_to_put]
 
 
-The licensing is ISC-style:
-http://www.opensource.org/licenses/isc-license.txt
+The licensing is MIT-style:
+http://www.opensource.org/licenses/mit-license.php
 
 
 An ebuild is included for the benefit of Gentoo users.

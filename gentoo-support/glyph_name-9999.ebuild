@@ -14,7 +14,7 @@ HOMEPAGE="http://github.com/chemoelectric/glyph_name"
 SRC_URI=""
 EGIT_REPO_URI="git://github.com/chemoelectric/glyph_name.git"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
