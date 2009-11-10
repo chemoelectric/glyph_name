@@ -1,16 +1,33 @@
 #!/usr/bin/env python
 
+"""
+  Copyright (c) 2009, Barry Schwartz
+
+  Permission to use, copy, modify, and/or distribute this software for
+  any purpose with or without fee is hereby granted, provided that the
+  above copyright notice and this permission notice appear in all
+  copies.
+
+  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+  WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+  WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+  AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+  DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA
+  OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+  TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+  PERFORMANCE OF THIS SOFTWARE.
+"""
+
 from distutils.core import setup, Extension
 
 glyph_name_module = Extension('_glyph_name',
                               sources = ['glyph_name_wrap.c'],
-                              library_dirs = ['/home/trashman/lib64'],
                               libraries = ['glyph_name'],
                               )
 
-setup (name = 'example',
-       version = '1.0',
-       description = 'Glyph name processing using the Adobe Glyph List',
+setup (name = 'glyph_name',
+       version = '1.1.0',
+       description = 'Glyph name processing based on the Adobe Glyph List',
        ext_modules = [glyph_name_module],
        py_modules = ['glyph_name'],
        )
