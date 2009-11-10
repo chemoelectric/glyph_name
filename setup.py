@@ -26,7 +26,7 @@ glyph_name_module = Extension('_glyph_name',
                               )
 
 setup (name = 'glyph_name',
-       version = '1.1.0',
+       version = '1.1',
        description = 'Glyph name processing based on the Adobe Glyph List',
        ext_modules = [glyph_name_module],
        py_modules = ['glyph_name'],

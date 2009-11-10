@@ -40,7 +40,7 @@ env = Environment()
 
 env['PREFIX'] = ('/usr/local' if GetOption('prefix') == None else GetOption('prefix'))
 env['LIBDIR'] = ('$PREFIX/lib' if GetOption('libdir') == None else GetOption('libdir'))
-env['SONAME_FLAGS'] = ('' if GetOption('include_soname') == None else ' -Wl,-soname=libglyph_name.so.1.1.0 ')
+env['SONAME_FLAGS'] = ('' if GetOption('include_soname') == None else ' -Wl,-soname=libglyph_name.so.1.1 ')
 env['CFLAGS'] = Split('-pipe -g -O2')
 env['M4FLAGS'] = Split('-DGLYPHLIST=glyphlist.txt')
 
