@@ -22,3 +22,6 @@ To install the Python extension:
 
 The licensing is ISC-style:
 http://www.opensource.org/licenses/isc-license.txt
+
+
+An ebuild is included for the benefit of Gentoo users.
