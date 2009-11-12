@@ -21,6 +21,7 @@ KEYWORDS="~amd64 ~x86"
 RDEPEND="python? ( >=dev-lang/python-2.6.4
 		           >=dev-lang/swig-1.3.40 )"
 DEPEND=">=dev-util/scons-1.2.0-r1
+        python? ( >=dev-lang/swig-1.3.40 )
 	    ${RDEPEND}"
 
 S="${WORKDIR}/${PN}"
