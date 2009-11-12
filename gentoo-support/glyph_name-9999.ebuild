@@ -19,10 +19,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 RDEPEND="python? ( >=dev-lang/python-2.6.4
-		   >=dev-lang/swig-1.3.40 )"
+		           >=dev-lang/swig-1.3.40 )"
 DEPEND=">=dev-util/scons-1.2.0-r1
-	${RDEPEND}
-       "
+	    ${RDEPEND}"
 
 S="${WORKDIR}/${PN}"
 
@@ -36,6 +35,7 @@ src_compile() {
 }
 
 src_install() {
+	python_need_rebuild
 	cd "${S}"
 	scons --prefix="${D}/usr" --libdir="${D}/usr/$(get_libdir)" --include_soname install ||
 	      die "scons install failed"
