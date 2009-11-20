@@ -31,7 +31,7 @@ setup (name = 'glyph_name',
        description = 'Glyph name processing based on the Adobe Glyph List',
        cmdclass = {'build_ext': build_ext},
        ext_modules = [
-        Extension('_glyph_name',
+        Extension('glyph_name',
                   sources = ['glyphname.pyx', 'agl_lookup.c'],
                   )
         ],

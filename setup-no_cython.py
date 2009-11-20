@@ -29,7 +29,7 @@ setup (name = 'glyph_name',
        version = '1.2',
        description = 'Glyph name processing based on the Adobe Glyph List',
        ext_modules = [
-        Extension('_glyph_name',
+        Extension('glyph_name',
                   sources = ['glyphname-no_cython.c', 'agl_lookup.c'],
                   )
         ],
