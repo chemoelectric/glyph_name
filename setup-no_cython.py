@@ -24,15 +24,13 @@ THE SOFTWARE.
 
 from distutils.core import setup
 from distutils.extension import Extension
-from Cython.Distutils import build_ext
 
 setup (name = 'glyph_name',
        version = '1.2',
        description = 'Glyph name processing based on the Adobe Glyph List',
-       cmdclass = {'build_ext': build_ext},
        ext_modules = [
         Extension('_glyph_name',
-                  sources = ['glyphname.pyx', 'agl_lookup.c'],
+                  sources = ['glyphname-no_cython.c', 'agl_lookup.c'],
                   )
         ],
        )

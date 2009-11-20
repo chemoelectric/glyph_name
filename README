@@ -13,10 +13,15 @@ To install the C library:
   scons [--prefix=/where_to_put] [--libdir=/where_to_put/lib] install
 
 
-To install the Python extension:
+To install the Python extension using Cython:
 
-  swig -python glyph_name.i
   python setup.py build_ext [--library-dirs=/where_to_look]
+  python setup.py install [--prefix=/where_to_put]
+
+To install the Python extension without Cython (using the pre-Cythoned
+C source file glyphname-no_cython.c):
+
+  python setup-no_cython.py build_ext [--library-dirs=/where_to_look]
   python setup.py install [--prefix=/where_to_put]
 
 
