@@ -19,10 +19,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
-	>=dev-lang/python-2.6.4
+	python? ( >=dev-lang/python-2.6.4 )
 	"
 DEPEND="
-	!nolib? ( >=dev-util/scons-1.2.0-r1 )
+        >=dev-lang/python-2.6.4
+	!nolib? ( >=dev-util/scons-1.2.0-r1
+	          sys-devel/m4 )
 	${RDEPEND}
 	"
 
